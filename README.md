@@ -1,5 +1,5 @@
 # knn-matting
-Python Source Code for KNN Matting, CVPR 2012 / TPAMI 2013 http://dingzeyu.li/projects/knn/
+Python port of source code for KNN Matting, CVPR 2012 / TPAMI 2013 http://dingzeyu.li/projects/knn/
 
 ### Requirements
 - python 3.5 (Though it should run on 2.7)
