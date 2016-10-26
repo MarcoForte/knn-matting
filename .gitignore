@@ -140,6 +140,3 @@ $RECYCLE.BIN/
 
 # VSCODE
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
