@@ -35,6 +35,7 @@ def main():
     img = scipy.misc.imread('donkey.png')[:,:,:3]
     trimap = scipy.misc.imread('donkeyTrimap.png')[:,:,:3]
     alpha = knn_matte(img, trimap)
+    scipy.misc.imsave('donkeyAlpha.png', alpha)
     plt.title('Alpha Matte')
     plt.imshow(alpha, cmap = 'gray')
     plt.show()
