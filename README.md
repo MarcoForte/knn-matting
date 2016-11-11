@@ -12,6 +12,11 @@ Python port of source code for KNN Matting, CVPR 2012 / TPAMI 2013 http://dingze
 - '''python knn_matting.py'''
 - mylambda (λ) is a constant controlling the users confidence in the constraints   
 
+### Results
+<img alt="Original image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkey.png" width="200">
+<img alt="Trimap image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkeyTrimap.png" width="200">
+<img alt="Result image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkeyAlpha.png" width="200">
+
 ### More Information
 
 For more information see the orginal paper and it's website here http://dingzeyu.li/projects/knn/
