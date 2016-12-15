@@ -10,7 +10,8 @@ Python port of source code for KNN Matting, CVPR 2012 / TPAMI 2013 http://dingze
 
 ### Running the demo
 - '''python knn_matting.py'''
-- mylambda (λ) is a constant controlling the users confidence in the constraints   
+- mylambda (λ) is a constant controlling the users confidence in the constraints
+- image size not larger than 640*480 reccomended for speed and memory reasons.
 
 ### Results
 <img alt="Original image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkey.png" width="200">
@@ -18,7 +19,7 @@ Python port of source code for KNN Matting, CVPR 2012 / TPAMI 2013 http://dingze
 <img alt="Result image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkeyAlpha.png" width="200">
 
 ### More Information
-
+The sparse matrix solve step may be greatly sped up by using the scikit-umfpack wrapper of UMFPACK sparse direct solver, https://github.com/scikit-umfpack/scikit-umfpack  
 For more information see the orginal paper and it's website here http://dingzeyu.li/projects/knn/
 The original matlab code is here https://github.com/dingzeyuli/knn-matting
 
