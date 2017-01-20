@@ -14,9 +14,9 @@ Python port of source code for KNN Matting, CVPR 2012 / TPAMI 2013 http://dingze
 - image size not larger than 640*480 reccomended for speed and memory reasons.
 
 ### Results
-<img alt="Original image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkey.png" width="200">
-<img alt="Trimap image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkeyTrimap.png" width="200">
-<img alt="Result image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkeyAlpha.png" width="200">
+<img alt="Original image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkey.png" width="250">
+<img alt="Trimap image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkeyTrimap.png" width="250">
+<img alt="Result image" src="https://github.com/MarcoForte/knn-matting/blob/master/donkeyAlpha.png" width="250">
 
 ### More Information
 The sparse matrix solve step may be greatly sped up by using the scikit-umfpack wrapper of UMFPACK sparse direct solver, https://github.com/scikit-umfpack/scikit-umfpack  
