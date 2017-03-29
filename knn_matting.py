@@ -1,6 +1,7 @@
 import numpy as np
 import sklearn.neighbors
 import scipy.sparse
+import warnings
 nn = 10
 def knn_matte(img, trimap, mylambda=100):
     [m, n, c] = img.shape
@@ -30,8 +31,13 @@ def knn_matte(img, trimap, mylambda=100):
     H = 2*(L + mylambda*D)
 
     print('Solving linear system for alpha')
-    alpha = np.minimum(np.maximum(scipy.sparse.linalg.spsolve(H,c),0),1).reshape(m,n)
-
+    warnings.filterwarnings('error')
+    alpha = []
+    try:
+        alpha = np.minimum(np.maximum(scipy.sparse.linalg.spsolve(H, c), 0), 1).reshape(m, n)
+    except Warning:
+        x = scipy.sparse.linalg.lsqr(H, c)
+        alpha = np.minimum(np.maximum(x[0], 0), 1).reshape(m, n)
     return alpha
 
 def main():
